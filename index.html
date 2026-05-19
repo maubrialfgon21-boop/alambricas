@@ -1,0 +1,351 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes Alámbricas</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f4f6f9;
+            color:#333;
+        }
+
+        header{
+            background:linear-gradient(90deg,#0f172a,#1e3a8a);
+            color:white;
+            padding:20px;
+            text-align:center;
+        }
+
+        nav{
+            background:#111827;
+            padding:15px;
+            position:sticky;
+            top:0;
+            z-index:1000;
+        }
+
+        nav ul{
+            list-style:none;
+            display:flex;
+            justify-content:center;
+            gap:20px;
+            flex-wrap:wrap;
+        }
+
+        nav ul li a{
+            text-decoration:none;
+            color:white;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        nav ul li a:hover{
+            color:#38bdf8;
+        }
+
+        section{
+            padding:50px;
+            margin:20px auto;
+            width:90%;
+            background:white;
+            border-radius:15px;
+            box-shadow:0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h2{
+            color:#1e3a8a;
+            margin-bottom:20px;
+        }
+
+        p{
+            line-height:1.8;
+            margin-bottom:15px;
+        }
+
+        .imagenes{
+            display:flex;
+            gap:20px;
+            flex-wrap:wrap;
+            justify-content:center;
+            margin-top:20px;
+        }
+
+        .imagenes img{
+            width:300px;
+            height:200px;
+            object-fit:cover;
+            border-radius:10px;
+            box-shadow:0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .video-container{
+            display:flex;
+            justify-content:center;
+            margin-top:20px;
+        }
+
+        video{
+            width:80%;
+            border-radius:15px;
+            box-shadow:0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        footer{
+            background:#0f172a;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:30px;
+        }
+
+        .tips{
+            background:#dbeafe;
+            padding:20px;
+            border-left:6px solid #2563eb;
+            border-radius:10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Redes alámbricas</h1>
+        <p></p>
+    </header> 
+
+    <nav>
+        <ul>
+            <li><a href="#que-son">¿Qué son?</a></li>
+            <li><a href="#construccion">Construcción</a></li>
+            <li><a href="#requerimientos">Requerimientos</a></li>
+            <li><a href="#seguridad">Seguridad</a></li>
+            <li><a href="#tips">Tips</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#video">Video</a></li>
+        </ul>
+    </nav>
+
+    <section id="que-son">
+        <h2>¿Qué son las redes alámbricas?</h2>
+
+        <p>
+            Las redes alámbricas son sistemas de comunicación que conectan computadoras, impresoras, servidores y otros dispositivos mediante cables físicos para compartir información, archivos, internet y recursos.
+
+Estas redes utilizan medios de transmisión como:
+
+Cable UTP (par trenzado)
+Cable coaxial
+Fibra óptica
+
+Se caracterizan por ofrecer:
+
+Mayor estabilidad de conexión
+Velocidad constante
+Menor interferencia
+Más seguridad que muchas redes inalámbricas
+
+Son muy utilizadas en:
+
+Escuelas
+Empresas
+Oficinas
+Centros de datos
+Hogares
+        </p>
+
+     
+
+        <div class="imagenes">
+            <!-- CAMBIA LAS IMÁGENES -->
+            <img src="imagenes/compu3.jpeg" alt="Red alámbrica">
+            <img src="imagenes/concentrador.jpeg" alt="Router WiFi">
+        </div>
+    </section>
+
+    <section id="construccion">
+        <h2>¿Cómo se construyen?</h2>
+
+        <p>
+            La construcción de una red alámbrica requiere planificación y organización. Generalmente se siguen estos pasos:
+        </p>
+
+      
+
+        <ul>
+            <li>Planeación de la red: Primero se analiza:
+
+Cuántos dispositivos se conectarán
+Qué área cubrirá la red
+Qué velocidad se necesita
+Tipo de uso (oficina, escuela, hogar, empresa)</li>
+            <li>Diseño de la topología:
+
+La topología es la forma en que se conectan los equipos.
+
+Las más usadas son:
+
+Topología estrella: todos los dispositivos se conectan a un switch central.
+Topología bus: todos usan un mismo cable principal.
+Topología anillo: los equipos forman un círculo de conexión.</li>
+            <li>Instalación del cableado:
+
+Durante esta etapa se:
+
+Colocan canaletas
+Instalan racks
+Distribuyen cables
+Etiquetan conexiones
+
+Es importante evitar:
+
+Humedad
+Exceso de calor
+Interferencias eléctricas</li>
+            <li>Instalación de dispositivos:
+
+Se conectan:
+
+Switches
+Routers
+Patch panels
+Servidores
+
+Todo debe quedar organizado y correctamente identificado.</li>
+            <li>Configuración de red:
+
+Incluye:
+
+Direcciones IP
+Máscaras de subred
+DNS
+Gateway
+Seguridad</li>
+        </ul>
+
+        <div class="imagenes">
+            <img src="imagenes/cable.jpeg" alt="Instalación de red">
+            <img src="imagenes/cable2.jpeg" alt="Conexión WiFi">
+        </div>
+    </section>
+
+    <section id="requerimientos">
+        <h2>Requerimientos Técnicos</h2>
+
+        <p>
+           Hardware y Software 
+Switches administrables
+        </p>
+
+        <ul>
+            <li>Routers:
+
+Administran conexiones externas e internas.</li>
+            <li>Servidores:
+
+Procesan y almacenan información.</li>
+            <li>Cableado estructurado:
+
+Debe cumplir estándares internacionales.</li>
+            <li>UPS y reguladores:
+
+Protegen los equipos de fallas eléctricas.</li>
+            <li>Sistemas operativos.</li>
+          
+        </ul>
+
+        <div class="imagenes">
+            <img src="imagenes/router.jpeg" alt="Router">
+            <img src="imagenes/cable3.jpeg" alt="Equipos de red">
+        </div>
+    </section>
+
+    <section id="seguridad">
+        <h2>Aspectos de Seguridad</h2>
+
+        <p>
+            La seguridad es esencial para proteger la información y evitar accesos no autorizados.
+        </p>
+<p> Seguridad física. Consiste en proteger físicamente: </p>
+
+        <ul>
+            <li>Servidores.</li>
+            <li>Cableado.</li>
+            <li>Routers.</li>
+            <li>Centros de datos.</li>
+            
+<p> 
+Seguridad lógica. </p>
+<ul>
+            <li>Contraseñas seguras.</li>
+            <li>Firewalls.</li>
+            <li>Antivirus.</li>
+            <li>Control de accesos.</li>
+
+        </ul>
+
+        <div class="imagenes">
+            <img src="imagenes/botas.jpeg" alt="Seguridad WiFi">
+            <img src="imagenes/compu1.jpeg" alt="Protección de red">
+        </div>
+    </section>
+
+    <section id="tips">
+        <h2>Tips para construir y mantener una red eficiente</h2>
+
+        <div class="tips">
+            <ul>
+                <li>Revisión de cables.</li>
+                <li>Limpieza de equipos.</li>
+                <li>Actualización de software.</li>
+                <li>Verificación de conexiones.</li>
+                <li>Actualiza el equipo para mantener mejor rendimiento.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="galeria">
+        <h2>Galería de Imágenes</h2>
+
+        <div class="imagenes">
+            <!-- AQUÍ PUEDES AGREGAR MÁS IMÁGENES -->
+            <img src="imagenes/salon 1.jpeg" alt="Imagen 1">
+            <img src="imagenes/salon 2.jpeg" alt="Imagen 2">
+            <img src="imagenes/salon3.jpeg" alt="Imagen 3">
+        </div>
+    </section>
+
+    <section id="video">
+        <h2>Video Explicativo</h2>
+
+        <p>
+        </p>
+
+        <div class="video-container">
+
+            <!-- VIDEO LOCAL -->
+            <video controls>
+                <source src="videos/video.mp4" type="video/mp4">
+                Tu navegador no soporta videos.
+            </video>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>Proyecto HTML - Redes Alámbricas | 2026</p>
+    </footer>
+
+</body>
+</html>
+```
